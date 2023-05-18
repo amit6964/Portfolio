@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4620ce9fb9.js" crossorigin="anonymous"></script>
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header class="header">
+        <!-- <img src="images/portfolio.png" alt="Portfolio-PNG-Pic" class="logo"> -->
+        <a href="#" class="logo-link">
+            <h1 class="logo">Port<span>folio</span></h1>
+        </a>
+
+        <nav class="navbar yoo">
+            <ul class="nav-list">
+                <li><a class="nav-links" href="index.html">Home</a></li>
+                <li><a class="nav-links" href="#">Project</a></li>
+                <li><a class="nav-links" href="#">About me</a></li>
+                <li><a class="nav-links" href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-navbar-btn">
+            <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+            <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
+    </header>
+
+
+    <div class="hero">
+
+        <div class="img-box">
+            <img src="images/amit-2.jpg" alt="amit-2" />
+        </div>
+
+
+        <div class="detel">
+            <h1>Hello</h1>
+            <h3>I am Amit <span>Mandal</span></h3>
+            <p>This is my official Portfolio website to showcase my all works<br>related to
+                web development and ui design.
+            </p>
+            <a href="" class="cv-btn">Resume</a>
+            <a href="" class="cv-btn">Projects</a>
+
+            <!-- icon -->
+            <!-- <div class="ionic">
+                <a href=""><ion-icon class="io-con" name="logo-behance"></ion-icon></a>
+                <a href=""><ion-icon class="io-con" name="logo-github"></ion-icon></a>
+                <a href=""><ion-icon class="io-con" name="logo-instagram"></ion-icon></a>
+            </div> -->
+            <!-- icon end -->
+        </div>
+    </div>      
+
+
+
+    <!-- javscript -->
+    <script>
+        const mobile_nav = document.querySelector(".mobile-navbar-btn");
+        const nav_header = document.querySelector(".header");
+        const toggleNavbar = () => {
+            nav_header.classList.toggle("active")
+        }
+        mobile_nav.addEventListener('click', () => toggleNavbar());
+    </script>
+    <!-- End -->
+
+</body>
+
+</html>
+
+
+
+
+<!-- <div class="box1">
+            <h1>I,M Amit<span> Mandal</span></h1>
+            <p>This is my official Portfolio website to showcase my all works related to
+                web <br>development and ui design.
+            </p>
+            <div class="bt">
+                <a href="" class="btn">Download CV</a>
+            </div>
+        </div> -->
